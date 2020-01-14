@@ -1,11 +1,7 @@
-// alert('This is signal of html');
-//   let n = promtpt('Enter n for FizzBuzz Program');
-//   console.log(n +' '+ typeof(n));
+alert('This is signal of html');
+  let n = Number(promtpt('Enter n for FizzBuzz Program'));
 
 let nn = document.querySelector('#n').textContent = n;
-let n = Number(new Promise(function(resolve, reject) {
-
-});)
 
   function fizzbuzz(n) {
     let output = [];
@@ -23,13 +19,13 @@ let n = Number(new Promise(function(resolve, reject) {
         txt_output += "Buzz" ;
       }else {
         output.push(i);
-        txt_output += ''
+        txt_output += '$(i)'
       }
     }
 
-    document.querySelector('#txt_output').textContent = n;
+    document.querySelector('#txt_output').textContent = txt_output;
     return output;
   }
 
 document.querySelector('#nn').textContent = n;
-fizzbuzz(5);
+console.log();
