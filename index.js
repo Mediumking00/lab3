@@ -1,4 +1,4 @@
-alert('This is signal of html');
+// alert('This is signal of html');
   let n = Number(promtpt('Enter n for FizzBuzz Program'));
 
 let nn = document.querySelector('#n').textContent = n;
