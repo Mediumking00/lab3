@@ -1,13 +1,22 @@
 h1{
-  font-family: Sans‑serif;
+  font-family: Impact;
+  text-align: center;
 }
-#tagh1{
-  padding-right: 3%;
+
+body{
+  font-family: Impact;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.tagh1{
+
+  font-family: Dishonorable Mention;
   font-size: 15px;
+  line-height: 70%;
 }
-#rules{
-  font-family: Impact;
-}
-#box{
-  font-family: Impact;
+
+#previous{
+  text-align: left;
 }

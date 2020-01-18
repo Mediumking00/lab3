@@ -1,31 +1,38 @@
 // alert('This is signal of html');
-  let n = Number(promtpt('Enter n for FizzBuzz Program'));
+//let n = Number(promtpt('Enter n for FizzBuzz Program'));
+//let nn = document.querySelector('#n').textContent = n;
 
-let nn = document.querySelector('#n').textContent = n;
+var randomnumber = Math.floor(Math.randon()*100)+1;
 
-  function fizzbuzz(n) {
-    let output = [];
-    let txt_output = "";
+var count = 0;
 
-    for (var i = 0; i < n; i++) {
-      if (i%3 == 0 && i%5 == 0) {
-        output.push("FizzBuzz ");
-        txt_output += "FizzBuzz ";
-      }else if (i%3 == 0) {
-        output.push("Fizz ");
-        txt_output += "Fizz ";
-      }else if (i%5 == 0) {
-        output.push("Buzz ");
-        txt_output += "Buzz" ;
-      }else {
-        output.push(i);
-        txt_output += '$(i)'
-      }
+let previous;
+
+document.getElementById("input").onclick = function(){
+  var guess = document.getElementById("inputbutton").value;
+
+  if (count<=10) {
+
+    document.querySelector('.counts').textContent = 10 - guess + " left";
+
+    if (guess == randomnumber) {
+      document.querySelector('.result').textContent = " Congratulations! You got it right!";
+    }else if (guess > randomnumber) {
+      count++;
+      document.querySelector('.result').textContent = " Your number was too high!";
+    }else {
+      count++;
+      document.querySelector('.result').textContent = " Your number was too low!";
     }
 
-    document.querySelector('#txt_output').textContent = txt_output;
-    return output;
+    if (count == 1) {
+      previous = guess;
+    }else{
+      previous += ", " + guess; 
+    }
+    document.querySelector('.previous').textContent = previous; 
+    
+  }else{
+    document.querySelector('.result').textContent = " Better try next time the number is" + randomnumber +".";
   }
-
-document.querySelector('#nn').textContent = n;
-console.log();
+}

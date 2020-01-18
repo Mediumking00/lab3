@@ -7,25 +7,30 @@
   </head>
   <body>
 
-    <h1>NUMBER GUESS GAME<i id="tagh1">    created by Jew</i></h1>
-
+    <h1>NUMBER GUESS GAME  <sub class="tagh1"> < created by Jew > </sub>
+    </h1>
     <p id="rules">
       WE have select a ramdom number between 1 and 100.<br>
       See if you can guess it in 10 turns or less.<br>
      WE'll tell you if your guess was too high or low.
    </p>
 
-    <form class="" action="index.html" method="post">
-      <span id="box">
-        ENTER A GUESS :
-        <input type="number" name="guess" alt=" 1 - 100">
-        <input type="submit" value="Submit">
+   <div class="form">
 
-      </span>
-    </form>
+     <span id="box" >
+       ENTER A GUESS :
+       <input type="number" id="input" name="guess" placeholder=" 1 - 100">
+       <input type="submit" id="inputbutton"  onclick="myFunction()" value="Guess it!">
 
+     </span>
 
-    <p id="txt_output"></p>
+   </div>
+   <div class="result"></div>
+   <div class="previous"></div>
+   <div class="counts"></div>
+
+    <div id="previous">Previous number : </div>
+
     <script src="index.js"></script>
 
   </body>
