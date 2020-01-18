@@ -28,10 +28,10 @@ document.getElementById("input").onclick = function(){
     if (count == 1) {
       previous = guess;
     }else{
-      previous += ", " + guess; 
+      previous += ", " + guess;
     }
-    document.querySelector('.previous').textContent = previous; 
-    
+    document.querySelector('.previous').textContent = previous;
+
   }else{
     document.querySelector('.result').textContent = " Better try next time the number is" + randomnumber +".";
   }
