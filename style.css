@@ -18,8 +18,18 @@ body{
 }
 
 .previous{
-  text-align: left;
+  padding-left: 3%;
   color: rgb(255, 255, 255);
-  font-family: "Dosis", cursive;
-  background-color: rgb(255, 0, 64);
+  font-family: Impact;
+  background-color: black;
+}
+
+.resultwrong{
+  font-family: Impact;
+  background-color: lightcoral;
+}
+
+.resultright{
+  font-family: Impact;
+  background-color: lightgreen;
 }
