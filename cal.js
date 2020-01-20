@@ -7,9 +7,9 @@ let previous;
 document.querySelector('query')
 
 
-document.getElementsByClassName('form').getElementById('inputbutton').onclick = function(){
+document.getElementById('inputbutton').onclick = function(){
 
-  var guess = document.getElementsByClassName('form').getElementById('input').value;
+  var guess = document.getElementById('input').value;
 
   if (count<=10) {
     if (guess > 100 || guess < 1) {
