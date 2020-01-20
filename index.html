@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <title>Number Guessing game</title>
+  <link href="https://fonts.googleapis.com/css?family=Fruktur" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
 </head>
 <body data-gr-c-s-loaded="true">
-
     <h1>NUMBER GUESS GAME  <sub class="tagh1"> < created by Jew > </sub>
     </h1>
     <p id="rules">
@@ -18,21 +19,19 @@
    </p>
 
    <div class="form">
-
-     <span id="box" >
        ENTER A GUESS :
        <input type="text" id="input" class="input" name="guess" placeholder=" 1 - 100">
-       <input type="submit" id="inputbutton"  onclick="Function()" value="Guess it!">
-
-     </span>
+       <input type="submit" value="Guess it!" id="inputbutton" >
 
    </div>
    <div class="result"></div>
    <div class="previous"></div>
    <div class="counts"></div>
 
-    <div id="previous">Previous number : </div>
 
+
+    <div id="previous">Previous number : </div>
+    <a href="index.html"><button>Restart Game</button></a>
     <script src="cal.js"></script>
 
   </body>
