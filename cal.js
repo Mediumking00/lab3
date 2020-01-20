@@ -1,4 +1,4 @@
-var randomnumber = Math.floor(Math.randon()*100)+1;
+var randomnumber = Math.floor(Math.random()*100)+1;
 
 var count = 0;
 
