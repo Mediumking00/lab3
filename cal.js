@@ -8,7 +8,7 @@ document.getElementById("input").onclick = function(){
   var guess = document.getElementById("inputbutton").value;
 
   if (count<=10) {
-    if (x > 100 || x < 1) {
+    if (guess > 100 || guess < 1) {
       document.querySelector('.result').textContent = "Please Enter Number Between 0 and 100";
     } else {
 
