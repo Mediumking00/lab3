@@ -4,8 +4,9 @@ var count = 0;
 
 let previous;
 
-document.getElementById("input").onclick = function(){
-  var guess = document.getElementById("inputbutton").value;
+document.getElementById("inputbutton").onclick = function(){
+
+  var guess = document.getElementById("input").value;
 
   if (count<=10) {
     if (guess > 100 || guess < 1) {
