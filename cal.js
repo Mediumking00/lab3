@@ -2,6 +2,7 @@ var randomnumber = Math.floor(Math.random()*100)+1;
 var count = 1;
 let previous;
 
+
 document.getElementById('inputbutton').onclick = function(){
 
   var guess = document.getElementById('input').value;
@@ -10,7 +11,7 @@ document.getElementById('inputbutton').onclick = function(){
     if (guess > 100 || guess < 1) {
       document.querySelector('result').textContent = "Please Enter Number Between 0 and 100";
     } else {
-      document.querySelector('counts').textContent = 10 - guess + " left";
+      document.querySelector('counts').textContent = 10 - count + " left";
       if (guess == randomnumber) {
         document.querySelector('result').textContent = " Congratulations! You got it right!";
         count = 12;
